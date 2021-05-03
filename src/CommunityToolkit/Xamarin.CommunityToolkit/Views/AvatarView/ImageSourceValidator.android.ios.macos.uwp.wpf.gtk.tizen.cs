@@ -2,10 +2,10 @@
 using System.Threading.Tasks;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
 
-#if MONOANDROID
-using Microsoft.Maui.Platform.Android;
-using UriImageSourceHandler = Microsoft.MauiPlatform.Android.ImageLoaderSourceHandler;
-using StreamImageSourceHandler = Microsoft.MauiPlatform.Android.StreamImagesourceHandler;
+#if NET6_0_ANDROID
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
+using UriImageSourceHandler = Microsoft.Maui.Controls.Compatibility.Platform.Android.ImageLoaderSourceHandler;
+using StreamImageSourceHandler = Microsoft.Maui.Controls.Compatibility.Platform.Android.StreamImagesourceHandler;
 #elif __IOS__
 using Microsoft.Maui.Platform.iOS;
 using UriImageSourceHandler = Microsoft.MauiPlatform.iOS.ImageLoaderSourceHandler;
@@ -39,7 +39,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 
 #if TIZEN
 			return await handler.LoadImageAsync(new NImage(XForms.NativeParent), source).ConfigureAwait(false);
-#elif MONOANDROID
+#elif NET6_0_ANDROID
 			var imageSource = await handler.LoadImageAsync(source, ToolkitPlatform.Context).ConfigureAwait(false);
 			return imageSource != null;
 #else
@@ -68,7 +68,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 
 			if (source is FileImageSource fileSource)
 			{
-#if !MONOANDROID
+#if !NET6_0_ANDROID
 				if (!File.Exists(fileSource.File))
 					return null;
 #endif

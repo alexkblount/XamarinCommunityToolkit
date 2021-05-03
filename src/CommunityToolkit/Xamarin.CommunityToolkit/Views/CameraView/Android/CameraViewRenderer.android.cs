@@ -12,12 +12,14 @@ using Android.Views;
 using Android.Widget;
 using AView = Android.Views.View;
 
-using Microsoft.Maui.Platform.Android.FastRenderers;
-using Microsoft.Maui.Platform.Android;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android.FastRenderers;
+using Microsoft.Maui.Controls.Compatibility.Android;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.CommunityToolkit.UI.Views;
 using System.Reflection;
 using System.Threading.Tasks;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 
 [assembly: ExportRenderer(typeof(CameraView), typeof(CameraViewRenderer))]
 
@@ -35,7 +37,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 
 		FragmentManager? fragmentManager;
 
-		FragmentManager FragmentManager => fragmentManager ??= Context.GetFragmentManager();
+		FragmentManager FragmentManager => fragmentManager ??= Microsoft.Maui.Controls.Compatibility.Platform.Android.ContextExtensions.GetFragmentManager(Context);// ??= Context.GetFragmentManager();
 
 		CameraFragment? camerafragment;
 
@@ -218,8 +220,8 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			if (width <= 0 || height <= 0)
 				return;
 
-			var realWidth = (int)context.ToPixels(width);
-			var realHeight = (int)context.ToPixels(height);
+			var realWidth = 0;//(int)context.ToPixels(width);
+			var realHeight = 0;//(int)context.ToPixels(height);
 
 			var widthMeasureSpec = MeasureSpecFactory.MakeMeasureSpec(realWidth, MeasureSpecMode.Exactly);
 			var heightMeasureSpec = MeasureSpecFactory.MakeMeasureSpec(realHeight, MeasureSpecMode.Exactly);
@@ -239,7 +241,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		SizeRequest IVisualElementRenderer.GetDesiredSize(int widthConstraint, int heightConstraint)
 		{
 			Measure(widthConstraint, heightConstraint);
-			var result = new SizeRequest(new Size(MeasuredWidth, MeasuredHeight), new Size(Context.ToPixels(20), Context.ToPixels(20)));
+			var result = new SizeRequest(new Size(MeasuredWidth, MeasuredHeight), new Size(0,0));//(Context.ToPixels(20), Context.ToPixels(20)));
 			return result;
 		}
 

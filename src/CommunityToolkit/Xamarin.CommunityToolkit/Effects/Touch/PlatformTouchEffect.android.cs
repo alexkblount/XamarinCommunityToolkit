@@ -10,7 +10,7 @@ using Android.Widget;
 using Xamarin.CommunityToolkit.Android.Effects;
 using Xamarin.CommunityToolkit.Effects;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Platform.Android;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using AView = Android.Views.View;
 using Color = Android.Graphics.Color;
 
@@ -20,7 +20,7 @@ namespace Xamarin.CommunityToolkit.Android.Effects
 {
 	public class PlatformTouchEffect : PlatformEffect
 	{
-		static readonly Microsoft.Maui.Colors defaultNativeAnimationColor = Microsoft.Maui.Colors.FromRgba(128, 128, 128, 64);
+		static readonly Microsoft.Maui.Color defaultNativeAnimationColor = Microsoft.Maui.Color.FromRgba(128, 128, 128, 64);
 
 		AccessibilityManager? accessibilityManager;
 		AccessibilityListener? accessibilityListener;
@@ -30,7 +30,7 @@ namespace Xamarin.CommunityToolkit.Android.Effects
 		AView? rippleView;
 		float startX;
 		float startY;
-		Microsoft.Maui.Colors rippleColor;
+		Microsoft.Maui.Color rippleColor;
 		int rippleRadius = -1;
 
 		AView View => Control ?? Container;
@@ -359,7 +359,7 @@ namespace Xamarin.CommunityToolkit.Android.Effects
 			_ = effect?.NativeAnimationColor ?? throw new NullReferenceException();
 
 			var nativeAnimationColor = effect.NativeAnimationColor;
-			if (nativeAnimationColor == Microsoft.Maui.Colors.Default)
+			if (nativeAnimationColor == Microsoft.Maui.Color.Default)
 				nativeAnimationColor = defaultNativeAnimationColor;
 
 			return new ColorStateList(

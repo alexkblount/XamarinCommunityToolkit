@@ -733,7 +733,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			if (contentContainer.VisibleViews.Count == 0)
 				return;
 
-			var contentWidth = contentContainer.VisibleViews.FirstOrDefault().Width;
+			var contentWidth = contentContainer.VisibleViews.FirstOrDefault()?.Width ?? 0;
 			var tabItemsCount = items.Cast<object>().Count();
 
 			for (var i = 0; i < tabItemsCount; i++)

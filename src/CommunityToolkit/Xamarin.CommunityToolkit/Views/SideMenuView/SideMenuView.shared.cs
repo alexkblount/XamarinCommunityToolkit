@@ -534,7 +534,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			HandleChildren(e.NewItems, AddChild);
 		}
 
-		void HandleChildren(IList items, Action<View> action)
+		void HandleChildren(IList? items, Action<View> action)
 		{
 			if (items != null)
 			{

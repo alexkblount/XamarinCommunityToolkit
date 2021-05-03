@@ -3,14 +3,11 @@ using System.Threading.Tasks;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Android.Graphics;
 using Android.Widget;
-using Microsoft.Maui.Platform.Android;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using Xamarin.CommunityToolkit.UI.Views.Options;
 using Android.Util;
-#if MONOANDROID10_0
 using AndroidSnackBar = Google.Android.Material.Snackbar.Snackbar;
-#else
-using AndroidSnackBar = Android.Support.Design.Widget.Snackbar;
-#endif
+
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {
@@ -21,7 +18,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			var renderer = await GetRendererWithRetries(sender) ?? throw new ArgumentException("Provided page cannot be parent to SnackBar", nameof(sender));
 			var snackBar = AndroidSnackBar.Make(renderer.View, arguments.MessageOptions.Message, (int)arguments.Duration.TotalMilliseconds);
 			var snackBarView = snackBar.View;
-			if (arguments.BackgroundColor != Microsoft.Maui.Colors.Default)
+			if (arguments.BackgroundColor != Microsoft.Maui.Color.Default)
 			{
 				snackBarView.SetBackgroundColor(arguments.BackgroundColor.ToAndroid());
 			}
@@ -37,7 +34,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 					(int)arguments.MessageOptions.Padding.Bottom);
 			}
 
-			if (arguments.MessageOptions.Foreground != Microsoft.Maui.Colors.Default)
+			if (arguments.MessageOptions.Foreground != Microsoft.Maui.Color.Default)
 			{
 				snackTextView.SetTextColor(arguments.MessageOptions.Foreground.ToAndroid());
 			}
@@ -63,13 +60,13 @@ namespace Xamarin.CommunityToolkit.UI.Views
 					if (action.Action != null)
 						await action.Action();
 				});
-				if (action.ForegroundColor != Microsoft.Maui.Colors.Default)
+				if (action.ForegroundColor != Microsoft.Maui.Color.Default)
 				{
 					snackBar.SetActionTextColor(action.ForegroundColor.ToAndroid());
 				}
 
 				var snackActionButtonView = snackBarView.FindViewById<TextView>(Resource.Id.snackbar_action) ?? throw new NullReferenceException();
-				if (arguments.BackgroundColor != Microsoft.Maui.Colors.Default)
+				if (arguments.BackgroundColor != Microsoft.Maui.Color.Default)
 				{
 					snackActionButtonView.SetBackgroundColor(action.BackgroundColor.ToAndroid());
 				}

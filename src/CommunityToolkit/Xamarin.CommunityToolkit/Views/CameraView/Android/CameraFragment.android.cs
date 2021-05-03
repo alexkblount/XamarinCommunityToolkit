@@ -34,7 +34,7 @@ using Microsoft.Maui.Controls.Internals;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Platform.Android;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using Camera = Android.Hardware.Camera;
 using Math = System.Math;
 using Rect = Android.Graphics.Rect;
@@ -128,7 +128,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		bool ZoomSupported => maxDigitalZoom != 0;
 
 		public override AView? OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) =>
-			inflater.Inflate(Resource.Layout.CameraFragment, null);
+			inflater.Inflate(Resource.Layout.camerafragment, null);
 
 		public override void OnViewCreated(AView view, Bundle savedInstanceState) =>
 			texture = view.FindViewById<AutoFitTextureView>(Resource.Id.cameratexture);

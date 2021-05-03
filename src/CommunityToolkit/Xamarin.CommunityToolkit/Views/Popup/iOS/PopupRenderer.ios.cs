@@ -9,6 +9,8 @@ using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Internals;
 using Microsoft.Maui.Platform.iOS;
 using Specifics = Xamarin.CommunityToolkit.PlatformConfiguration.iOSSpecific.PopUp;
+using Microsoft.Maui.Controls.Compatibility.Platform.iOS;
+using Microsoft.Maui.Controls.Compatibility;
 
 [assembly: ExportRenderer(typeof(BasePopup), typeof(PopupRenderer))]
 

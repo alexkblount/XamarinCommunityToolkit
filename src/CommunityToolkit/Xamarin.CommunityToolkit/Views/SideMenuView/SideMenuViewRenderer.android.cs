@@ -5,8 +5,9 @@ using Android.Views;
 using Xamarin.CommunityToolkit.Android.UI.Views;
 using Xamarin.CommunityToolkit.UI.Views;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Platform.Android;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using static System.Math;
+using Microsoft.Maui.Controls.Compatibility;
 
 [assembly: ExportRenderer(typeof(SideMenuView), typeof(SideMenuViewRenderer))]
 

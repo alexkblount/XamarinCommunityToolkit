@@ -16,7 +16,7 @@ namespace Xamarin.CommunityToolkit.UI.Views.Helpers.macOS
 
 		public NSTextAlignment TextAlignment { get; set; } = NSTextAlignment.Left;
 
-		public static NSColor DefaultColor { get; } = Microsoft.Maui.Colors.Default.ToNSColor();
+		public static NSColor DefaultColor { get; } = Microsoft.Maui.Color.Default.ToNSColor();
 
 		public static NSFont DefaultFont { get; } = Forms.Font.Default.ToNSFont();
 
@@ -27,7 +27,7 @@ namespace Xamarin.CommunityToolkit.UI.Views.Helpers.macOS
 	{
 		public static NSLineBreakMode LineBreakMode { get; set; } = NSLineBreakMode.TruncatingMiddle;
 
-		public static NSColor DefaultColor { get; } = Microsoft.Maui.Colors.Default.ToNSColor();
+		public static NSColor DefaultColor { get; } = Microsoft.Maui.Color.Default.ToNSColor();
 
 		public static NSFont DefaultFont { get; } = Forms.Font.Default.ToNSFont();
 	}

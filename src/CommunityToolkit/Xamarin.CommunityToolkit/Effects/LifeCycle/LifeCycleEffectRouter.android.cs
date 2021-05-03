@@ -3,7 +3,7 @@ using System.Linq;
 using Xamarin.CommunityToolkit.Android.Effects;
 using Xamarin.CommunityToolkit.Effects;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Platform.Android;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using View = Android.Views.View;
 
 [assembly: ExportEffect(typeof(LifeCycleEffectRouter), nameof(LifecycleEffect))]

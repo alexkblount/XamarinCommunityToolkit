@@ -114,7 +114,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		}
 
 		/// <summary>
-		/// Gets or sets the border <see cref="Microsoft.Maui.Colors"/> of the image for the <see cref="AvatarView"/>. This is a bindable property.
+		/// Gets or sets the border <see cref="Microsoft.Maui.Color"/> of the image for the <see cref="AvatarView"/>. This is a bindable property.
 		/// </summary>
 		public Color BorderColor
 		{
@@ -123,7 +123,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		}
 
 		/// <summary>
-		/// Gets or sets the background <see cref="Microsoft.Maui.Colors"/> of the  for the <see cref="AvatarView"/>. This only applies when <see cref="Source"/> is not set or doesn't result in a showing image. This is a bindable property.
+		/// Gets or sets the background <see cref="Microsoft.Maui.Color"/> of the  for the <see cref="AvatarView"/>. This only applies when <see cref="Source"/> is not set or doesn't result in a showing image. This is a bindable property.
 		/// </summary>
 		public Color Color
 		{
@@ -150,7 +150,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		}
 
 		/// <summary>
-		/// Gets or sets the <see cref="Microsoft.Maui.Colors"/> of the <see cref="Text"/> for the <see cref="AvatarView"/>. This is a bindable property.
+		/// Gets or sets the <see cref="Microsoft.Maui.Color"/> of the <see cref="Text"/> for the <see cref="AvatarView"/>. This is a bindable property.
 		/// </summary>
 		public Color TextColor
 		{

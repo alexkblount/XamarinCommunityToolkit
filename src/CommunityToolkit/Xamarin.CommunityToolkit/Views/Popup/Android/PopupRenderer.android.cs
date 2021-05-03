@@ -7,14 +7,16 @@ using Android.Views;
 using Android.Widget;
 using Xamarin.CommunityToolkit.UI.Views;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Platform.Android;
+using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using static Android.App.ActionBar;
 using AColorRes = Android.Resource.Color;
 using AView = Android.Views.View;
-using FormsPlatform = Microsoft.MauiPlatform.Android.Platform;
+using FormsPlatform = Microsoft.Maui.Controls.Compatibility.Platform.Android.Platform;
 using GravityFlags = Android.Views.GravityFlags;
+using Microsoft.Maui.Controls.Compatibility;
 
-[assembly: ExportRenderer(typeof(BasePopup), typeof(PopupRenderer))]
+
+[assembly: Microsoft.Maui.Controls.Compatibility.ExportRenderer(typeof(BasePopup), typeof(PopupRenderer))]
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {
@@ -135,11 +137,11 @@ namespace Xamarin.CommunityToolkit.UI.Views
 				var decorView = (ViewGroup)(Window?.DecorView ?? throw new NullReferenceException());
 				var child = (FrameLayout)(decorView?.GetChildAt(0) ?? throw new NullReferenceException());
 
-				var realWidth = (int)Context.ToPixels(basePopup.Size.Width);
-				var realHeight = (int)Context.ToPixels(basePopup.Size.Height);
+				var realWidth = 0;//(int)Context.ToPixels(basePopup.Size.Width);
+				var realHeight = 0;//(int)Context.ToPixels(basePopup.Size.Height);
 
-				var realContentWidth = (int)Context.ToPixels(basePopup.Content.WidthRequest);
-				var realContentHeight = (int)Context.ToPixels(basePopup.Content.HeightRequest);
+				var realContentWidth = 0;//(int)Context.ToPixels(basePopup.Content.WidthRequest);
+				var realContentHeight = 0;//(int)Context.ToPixels(basePopup.Content.HeightRequest);
 
 				var childLayoutParams = (FrameLayout.LayoutParams)(child?.LayoutParameters ?? throw new NullReferenceException());
 				childLayoutParams.Width = realWidth;

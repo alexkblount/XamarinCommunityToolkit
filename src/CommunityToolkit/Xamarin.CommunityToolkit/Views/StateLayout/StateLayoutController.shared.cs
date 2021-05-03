@@ -163,7 +163,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 
 		StateView GetViewForState(LayoutState state, string? customState)
 		{
-			var view = StateViews.FirstOrDefault(x => (x.StateKey == state && state != LayoutState.Custom) ||
+			var view = StateViews.First(x => (x.StateKey == state && state != LayoutState.Custom) ||
 							(state == LayoutState.Custom && x.CustomStateKey == customState));
 
 			return view;
@@ -227,7 +227,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			animationTokenSource?.Dispose();
 
 			foreach (var child in layout.Children)
-				ViewExtensions.CancelAnimations(child);
+				Microsoft.Maui.Controls.ViewExtensions.CancelAnimations(child);
 
 			animationTokenSource = new CancellationTokenSource();
 			return animationTokenSource.Token;

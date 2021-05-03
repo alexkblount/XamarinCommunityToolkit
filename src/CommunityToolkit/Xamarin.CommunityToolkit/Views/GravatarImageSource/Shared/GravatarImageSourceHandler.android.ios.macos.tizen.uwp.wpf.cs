@@ -67,8 +67,8 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			{
 				await semaphore.WaitAsync();
 
-				if (!file.Directory.Exists)
-					file.Directory.Create();
+				if (!file.Directory?.Exists ?? false)
+					file.Directory?.Create();
 			}
 			finally
 			{
