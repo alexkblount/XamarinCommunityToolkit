@@ -21,7 +21,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			var renderer = await GetRendererWithRetries(sender) ?? throw new ArgumentException("Provided page cannot be parent to SnackBar", nameof(sender));
 			var snackBar = AndroidSnackBar.Make(renderer.View, arguments.MessageOptions.Message, (int)arguments.Duration.TotalMilliseconds);
 			var snackBarView = snackBar.View;
-			if (arguments.BackgroundColor != Forms.Color.Default)
+			if (arguments.BackgroundColor != Microsoft.Maui.Colors.Default)
 			{
 				snackBarView.SetBackgroundColor(arguments.BackgroundColor.ToAndroid());
 			}
@@ -37,7 +37,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 					(int)arguments.MessageOptions.Padding.Bottom);
 			}
 
-			if (arguments.MessageOptions.Foreground != Forms.Color.Default)
+			if (arguments.MessageOptions.Foreground != Microsoft.Maui.Colors.Default)
 			{
 				snackTextView.SetTextColor(arguments.MessageOptions.Foreground.ToAndroid());
 			}
@@ -63,13 +63,13 @@ namespace Xamarin.CommunityToolkit.UI.Views
 					if (action.Action != null)
 						await action.Action();
 				});
-				if (action.ForegroundColor != Forms.Color.Default)
+				if (action.ForegroundColor != Microsoft.Maui.Colors.Default)
 				{
 					snackBar.SetActionTextColor(action.ForegroundColor.ToAndroid());
 				}
 
 				var snackActionButtonView = snackBarView.FindViewById<TextView>(Resource.Id.snackbar_action) ?? throw new NullReferenceException();
-				if (arguments.BackgroundColor != Forms.Color.Default)
+				if (arguments.BackgroundColor != Microsoft.Maui.Colors.Default)
 				{
 					snackActionButtonView.SetBackgroundColor(action.BackgroundColor.ToAndroid());
 				}

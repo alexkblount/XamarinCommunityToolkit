@@ -72,19 +72,19 @@ namespace Xamarin.CommunityToolkit.Android.Effects
 			}
 		}
 
-		void SetImageViewTintColor(ImageView image, Forms.Color color)
+		void SetImageViewTintColor(ImageView image, Microsoft.Maui.Colors color)
 		{
-			if (color == Forms.Color.Default)
+			if (color == Microsoft.Maui.Colors.Default)
 				image.ClearColorFilter();
 
 			image.SetColorFilter(new PorterDuffColorFilter(color.ToAndroid(), PorterDuff.Mode.SrcIn ?? throw new NullReferenceException()));
 		}
 
-		void SetButtonTintColor(Button button, Forms.Color color)
+		void SetButtonTintColor(Button button, Microsoft.Maui.Colors color)
 		{
 			var drawables = button.GetCompoundDrawables().Where(d => d != null);
 
-			if (color == Forms.Color.Default)
+			if (color == Microsoft.Maui.Colors.Default)
 			{
 				foreach (var img in drawables)
 					img.ClearColorFilter();

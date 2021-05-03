@@ -40,7 +40,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		static void OnSubjectBackgroundColorChanged(BindableObject bindable, object oldValue, object newValue) => ((Shield)bindable).UpdateSubjectColor();
 
 		/// <summary>
-		/// Background <see cref="Forms.Color" /> of the left side of the <see cref="Shield" />. This is a bindable property.
+		/// Background <see cref="Microsoft.Maui.Colors" /> of the left side of the <see cref="Shield" />. This is a bindable property.
 		/// </summary>
 		public Color SubjectBackgroundColor
 		{
@@ -72,7 +72,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		static void OnSubjectTextColorChanged(BindableObject bindable, object oldValue, object newValue) => ((Shield)bindable).UpdateSubjectTextColor();
 
 		/// <summary>
-		/// Text <see cref="Forms.Color" /> of the text on the right side of the Shield
+		/// Text <see cref="Microsoft.Maui.Colors" /> of the text on the right side of the Shield
 		/// </summary>
 		public Color SubjectTextColor
 		{
@@ -122,7 +122,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		static void OnStatusBackgroundColorChanged(BindableObject bindable, object oldValue, object newValue) => ((Shield)bindable).UpdateStatusBackgroundColor();
 
 		/// <summary>
-		/// Background <see cref="Forms.Color" /> of the right side of the <see cref="Shield" />. This is a bindable property.
+		/// Background <see cref="Microsoft.Maui.Colors" /> of the right side of the <see cref="Shield" />. This is a bindable property.
 		/// </summary>
 		public Color StatusBackgroundColor
 		{
@@ -140,7 +140,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		static void OnStatusTextColorChanged(BindableObject bindable, object oldValue, object newValue) => ((Shield)bindable).UpdateStatusTextColor();
 
 		/// <summary>
-		/// Text <see cref="Forms.Color" /> of the text on the right side of the Shield
+		/// Text <see cref="Microsoft.Maui.Colors" /> of the text on the right side of the Shield
 		/// </summary>
 		public Color StatusTextColor
 		{
