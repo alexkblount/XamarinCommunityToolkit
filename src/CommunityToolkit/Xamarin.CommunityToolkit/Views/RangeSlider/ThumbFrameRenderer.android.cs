@@ -2,7 +2,7 @@
 using Android.Views;
 using Xamarin.CommunityToolkit.UI.Views;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.Android.FastRenderers;
+using Microsoft.Maui.Platform.Android.FastRenderers;
 
 [assembly: ExportRenderer(typeof(ThumbFrame), typeof(ThumbFrameRenderer))]
 

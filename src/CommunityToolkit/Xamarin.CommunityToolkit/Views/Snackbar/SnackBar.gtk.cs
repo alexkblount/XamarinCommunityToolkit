@@ -5,8 +5,8 @@ using Gtk;
 using Pango;
 using Xamarin.CommunityToolkit.UI.Views.Options;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.GTK;
-using Xamarin.Forms.Platform.GTK.Extensions;
+using Microsoft.Maui.Platform.GTK;
+using Microsoft.Maui.Platform.GTK.Extensions;
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {

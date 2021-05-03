@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Android.Graphics;
 using Android.Widget;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 using Xamarin.CommunityToolkit.UI.Views.Options;
 using Android.Util;
 #if MONOANDROID10_0

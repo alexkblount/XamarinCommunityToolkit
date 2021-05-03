@@ -160,7 +160,7 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		/// <summary>
 		/// Font size of all the text on the <see cref="Shield" />. <see cref="NamedSize" /> values can be used. This is a bindable preoprty.
 		/// </summary>
-		[Xamarin.Forms.TypeConverter(typeof(FontSizeConverter))]
+		[Microsoft.MauiTypeConverter(typeof(FontSizeConverter))]
 		public double FontSize
 		{
 			get => (double)GetValue(FontSizeProperty);

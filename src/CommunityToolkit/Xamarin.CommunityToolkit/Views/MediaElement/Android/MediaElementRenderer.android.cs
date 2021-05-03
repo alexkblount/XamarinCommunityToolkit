@@ -5,7 +5,7 @@ using Android.Media;
 using Android.Views;
 using Android.Widget;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 using AView = Android.Views.View;
 using ToolKitMediaElement = Xamarin.CommunityToolkit.UI.Views.MediaElement;
 using ToolKitMediaElementRenderer = Xamarin.CommunityToolkit.UI.Views.MediaElementRenderer;

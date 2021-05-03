@@ -1,9 +1,9 @@
 ﻿using Microsoft.Maui; using Microsoft.Maui.Controls;
-using static Xamarin.Forms.Constraint;
-using Bounds = System.Linq.Expressions.Expression<System.Func<Xamarin.Forms.Rectangle>>;
+using static Microsoft.Maui.Constraint;
+using Bounds = System.Linq.Expressions.Expression<System.Func<Microsoft.MauiRectangle>>;
 using Expression = System.Linq.Expressions.Expression<System.Func<double>>;
-using ParentMeasure = System.Func<Xamarin.Forms.RelativeLayout, double>;
-using ViewMeasure = System.Func<Xamarin.Forms.RelativeLayout, Xamarin.Forms.View, double>;
+using ParentMeasure = System.Func<Microsoft.MauiRelativeLayout, double>;
+using ViewMeasure = System.Func<Microsoft.MauiRelativeLayout, Microsoft.MauiView, double>;
 
 namespace Xamarin.CommunityToolkit.Markup
 {

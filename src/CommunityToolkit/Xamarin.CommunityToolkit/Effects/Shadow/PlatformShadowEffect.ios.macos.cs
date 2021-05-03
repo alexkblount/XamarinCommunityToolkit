@@ -6,11 +6,11 @@ using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 #if __IOS__
 using NativeView = UIKit.UIView;
-using Xamarin.Forms.Platform.iOS;
+using Microsoft.Maui.Platform.iOS;
 using Xamarin.CommunityToolkit.iOS.Effects;
 #elif __MACOS__
 using NativeView = AppKit.NSView;
-using Xamarin.Forms.Platform.MacOS;
+using Microsoft.Maui.Platform.MacOS;
 using Xamarin.CommunityToolkit.macOS.Effects;
 #endif
 

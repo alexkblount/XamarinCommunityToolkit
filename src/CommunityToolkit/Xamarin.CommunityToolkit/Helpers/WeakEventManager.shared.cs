@@ -122,7 +122,7 @@ namespace Xamarin.CommunityToolkit.Helpers
 	}
 
 	/// <summary>
-	/// Extensions for Xamarin.Forms.WeakEventManager
+	/// Extensions for Microsoft.MauiWeakEventManager
 	/// </summary>
 	public static class WeakEventManagerExtensions
 	{

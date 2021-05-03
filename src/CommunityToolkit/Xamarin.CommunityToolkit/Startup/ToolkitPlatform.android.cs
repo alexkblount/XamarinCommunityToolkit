@@ -1,6 +1,6 @@
 ﻿using System;
 using Android.Content;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 
 namespace Xamarin.CommunityToolkit
 {

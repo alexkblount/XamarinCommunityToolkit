@@ -2,7 +2,7 @@
 using Xamarin.CommunityToolkit.UI.Views.Options;
 using System.Linq;
 #if UWP
-using Xamarin.Forms.Platform.UWP;
+using Microsoft.Maui.Platform.UWP;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Controls;
@@ -10,7 +10,7 @@ using Windows.UI.Xaml.Controls;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using Xamarin.Forms.Platform.WPF;
+using Microsoft.Maui.Platform.WPF;
 #endif
 
 namespace Xamarin.CommunityToolkit.UI.Views.Helpers

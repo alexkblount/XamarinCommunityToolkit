@@ -3,18 +3,23 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0-ios;net6.0-android</TargetFrameworks>
     <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('osx')) Or Exists('$(MSBuildExtensionsPath)..\..\packs\Microsoft.MacCatalyst.Sdk')">$(TargetFrameworks);net6.0-maccatalyst</TargetFrameworks>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <EnableDefaultEmbeddedResourceItems>true</EnableDefaultEmbeddedResourceItems>
     <UseMaui>True</UseMaui>
-    <SingleProject>true</SingleProject>
-    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'net6.0-android'">$(PackageTargetFallback);net2.0</PackageTargetFallback>
+    <SingleProject>true</SingleProject>    
+    <RuntimeIdentifier Condition="'$(TargetFramework)' == 'net6.0-ios'">iossimulator-x64</RuntimeIdentifier>
+    <RuntimeIdentifier Condition="'$(TargetFramework)' == 'net6.0-maccatalyst'">maccatalyst-x64</RuntimeIdentifier>
+        <!-- Debugger workaround -->
+    <MtouchExtraArgs Condition="'$(TargetFramework)' == 'net6.0-ios' Or '$(TargetFramework)' == 'net6.0-maccatalyst'">$(MtouchExtraArgs) --setenv:MONO_THREADS_SUSPEND=preemptive</MtouchExtraArgs>
+    <PackageTargetFallback Condition="'$(TargetFramework)' == 'net6.0-android'">$(PackageTargetFallback);net2.0</PackageTargetFallback>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AssemblyName>Xamarin.CommunityToolkit</AssemblyName>
     <RootNamespace>Xamarin.CommunityToolkit</RootNamespace>
     <PackageId>Xamarin.CommunityToolkit</PackageId>
     <Summary>Community-created toolkit with common Xamarin converters, effects, behaviors etc.</Summary>
     <PackageTag>xamarin,ios,android,uwp,xamarin.forms,effects,controls,converters,animations,toolkit,kit,communitytoolkit,xamarincommunitytoolkit,watchos,tvos,tizen,Microsoft.Toolkit.Xamarin.Forms</PackageTag>
     <Title>Xamarin.CommunityToolkit</Title>
-    <Description>The Xamarin Community Toolkit is a collection of Animations, Behaviors, Converters, and Effects for mobile development with Xamarin.Forms. It simplifies and demonstrates common developer tasks building iOS, Android, and UWP apps with Xamarin.Forms.</Description>
+    <Description>The Xamarin Community Toolkit is a collection of Animations, Behaviors, Converters, and Effects for mobile development with Microsoft.Maui It simplifies and demonstrates common developer tasks building iOS, Android, and UWP apps with Microsoft.Maui</Description>
     <PackageIcon>icon.png</PackageIcon>
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -113,7 +118,7 @@
           </SDKReference>
         -->
   </ItemGroup>
-  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('net6.0-android')) ">
     <Compile Include="**\*.android.cs" />
     <Compile Include="**\*.android.*.cs" />
     <!--Resources-->
@@ -159,20 +164,20 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="WindowsBase" />
-    <PackageReference Include="Xamarin.Forms.Platform.WPF" Version="5.0.0.1874" />
+    <PackageReference Include="Microsoft.MauiPlatform.WPF" Version="5.0.0.1874" />
     <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('netcoreapp')) AND '$(OS)' == 'Windows_NT' ">
     <Compile Include="**\*.wpf.cs" />
     <Compile Include="**\*.wpf.*.cs" />
-    <PackageReference Include="Xamarin.Forms.Platform.WPF" Version="5.0.0.1874" />
+    <PackageReference Include="Microsoft.MauiPlatform.WPF" Version="5.0.0.1874" />
   </ItemGroup>
 
   <ItemGroup Condition=" $(TargetFramework.StartsWith('net471')) ">
     <Compile Include="**\*.gtk.cs" />
     <Compile Include="**\*.gtk.*.cs" />
-    <PackageReference Include="Xamarin.Forms.Platform.GTK" Version="5.0.0.1874" />
+    <PackageReference Include="Microsoft.MauiPlatform.GTK" Version="5.0.0.1874" />
     <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
     <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

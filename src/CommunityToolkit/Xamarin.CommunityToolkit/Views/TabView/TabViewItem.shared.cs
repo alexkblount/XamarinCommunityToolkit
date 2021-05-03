@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Internals;
+using Microsoft.Maui.Internals;
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {

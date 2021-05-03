@@ -1,6 +1,6 @@
 ﻿using System;
 using Xamarin.CommunityToolkit.ObjectModel;
-using Xamarin.Forms.Internals;
+using Microsoft.Maui.Internals;
 
 namespace Xamarin.CommunityToolkit.Helpers
 {

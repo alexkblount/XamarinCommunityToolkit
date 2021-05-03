@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Windows.Input;
 using Xamarin.CommunityToolkit.Behaviors.Internals;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Internals;
+using Microsoft.Maui.Internals;
 
 namespace Xamarin.CommunityToolkit.Behaviors
 {

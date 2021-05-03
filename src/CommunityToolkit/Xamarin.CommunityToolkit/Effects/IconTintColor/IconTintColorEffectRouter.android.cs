@@ -5,10 +5,10 @@ using Android.Graphics;
 using Android.Widget;
 using Xamarin.CommunityToolkit.Effects;
 using Xamarin.CommunityToolkit.Extensions;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 using Effects = Xamarin.CommunityToolkit.Android.Effects;
 
-[assembly: Xamarin.Forms.ExportEffect(typeof(Effects.IconTintColorEffectRouter), nameof(IconTintColorEffectRouter))]
+[assembly: Microsoft.MauiExportEffect(typeof(Effects.IconTintColorEffectRouter), nameof(IconTintColorEffectRouter))]
 
 namespace Xamarin.CommunityToolkit.Android.Effects
 {

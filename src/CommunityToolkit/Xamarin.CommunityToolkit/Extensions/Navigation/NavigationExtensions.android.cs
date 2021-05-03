@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.UI.Views;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 
 namespace Xamarin.CommunityToolkit.Extensions
 {

@@ -30,11 +30,11 @@ using Env = Android.OS.Environment;
 using Java.Lang;
 using Java.Util.Concurrent;
 
-using Xamarin.Forms.Internals;
+using Microsoft.Maui.Internals;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 using Camera = Android.Hardware.Camera;
 using Math = System.Math;
 using Rect = Android.Graphics.Rect;

@@ -3,7 +3,7 @@ using UIKit;
 using Xamarin.CommunityToolkit.iOS.UI.Views;
 using Xamarin.CommunityToolkit.UI.Views;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.iOS;
+using Microsoft.Maui.Platform.iOS;
 using static System.Math;
 
 [assembly: ExportRenderer(typeof(SideMenuView), typeof(SideMenuViewRenderer))]

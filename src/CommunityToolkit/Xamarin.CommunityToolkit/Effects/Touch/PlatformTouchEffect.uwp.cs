@@ -5,8 +5,8 @@ using Windows.UI.Xaml.Media.Animation;
 using Xamarin.CommunityToolkit.Effects;
 using Xamarin.CommunityToolkit.UWP.Effects;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Internals;
-using Xamarin.Forms.Platform.UWP;
+using Microsoft.Maui.Internals;
+using Microsoft.Maui.Platform.UWP;
 
 [assembly: ExportEffect(typeof(PlatformTouchEffect), nameof(TouchEffect))]
 

@@ -5,7 +5,7 @@ using Android.Widget;
 using Xamarin.CommunityToolkit.Android.Effects;
 using Xamarin.CommunityToolkit.Effects;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 using AView = Android.Views.View;
 
 [assembly: ExportEffect(typeof(PlatformShadowEffect), nameof(ShadowEffect))]

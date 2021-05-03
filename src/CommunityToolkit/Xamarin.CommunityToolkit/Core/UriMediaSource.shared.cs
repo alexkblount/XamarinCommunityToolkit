@@ -14,7 +14,7 @@ namespace Xamarin.CommunityToolkit.Core
 		static void OnUriSourceChanged(BindableObject bindable, object oldValue, object newValue) =>
 			((UriMediaSource)bindable).OnSourceChanged();
 
-		[TypeConverter(typeof(Xamarin.Forms.UriTypeConverter))]
+		[TypeConverter(typeof(Microsoft.MauiUriTypeConverter))]
 		public Uri? Uri
 		{
 			get => (Uri?)GetValue(UriProperty);

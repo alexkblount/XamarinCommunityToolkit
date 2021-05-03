@@ -2,7 +2,7 @@
 using Xamarin.CommunityToolkit.Effects;
 using Xamarin.CommunityToolkit.Tizen.Effects;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.Tizen;
+using Microsoft.Maui.Platform.Tizen;
 using EColor = ElmSharp.Color;
 
 [assembly: ExportEffect(typeof(PlatformTouchEffect), nameof(TouchEffect))]

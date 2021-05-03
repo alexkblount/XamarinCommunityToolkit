@@ -7,11 +7,11 @@ using Android.Views;
 using Android.Widget;
 using Xamarin.CommunityToolkit.UI.Views;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 using static Android.App.ActionBar;
 using AColorRes = Android.Resource.Color;
 using AView = Android.Views.View;
-using FormsPlatform = Xamarin.Forms.Platform.Android.Platform;
+using FormsPlatform = Microsoft.MauiPlatform.Android.Platform;
 using GravityFlags = Android.Views.GravityFlags;
 
 [assembly: ExportRenderer(typeof(BasePopup), typeof(PopupRenderer))]

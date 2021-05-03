@@ -5,7 +5,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Xamarin.CommunityToolkit.UI.Views.Helpers;
 using Xamarin.CommunityToolkit.UI.Views.Options;
-using Xamarin.Forms.Platform.UWP;
+using Microsoft.Maui.Platform.UWP;
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {

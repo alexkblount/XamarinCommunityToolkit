@@ -1,7 +1,7 @@
 ﻿using Xamarin.CommunityToolkit.UI.Views;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
 using XCTElement = Xamarin.CommunityToolkit.UI.Views.BasePopup;
-using XFPC = Xamarin.Forms.PlatformConfiguration;
+using XFPC = Microsoft.MauiPlatformConfiguration;
 
 namespace Xamarin.CommunityToolkit.PlatformConfiguration.WindowsSpecific
 {

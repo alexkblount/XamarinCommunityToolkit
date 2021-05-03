@@ -3,8 +3,8 @@ using System.Windows.Forms;
 using Xamarin.CommunityToolkit.UI.Views.Helpers;
 using Xamarin.CommunityToolkit.UI.Views.Options;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.WPF.Controls;
-using Xamarin.Forms.Platform.WPF.Helpers;
+using Microsoft.Maui.Platform.WPF.Controls;
+using Microsoft.Maui.Platform.WPF.Helpers;
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {

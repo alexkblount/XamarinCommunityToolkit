@@ -3,28 +3,28 @@ using System.Threading.Tasks;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 #if MONOANDROID
-using Xamarin.Forms.Platform.Android;
-using UriImageSourceHandler = Xamarin.Forms.Platform.Android.ImageLoaderSourceHandler;
-using StreamImageSourceHandler = Xamarin.Forms.Platform.Android.StreamImagesourceHandler;
+using Microsoft.Maui.Platform.Android;
+using UriImageSourceHandler = Microsoft.MauiPlatform.Android.ImageLoaderSourceHandler;
+using StreamImageSourceHandler = Microsoft.MauiPlatform.Android.StreamImagesourceHandler;
 #elif __IOS__
-using Xamarin.Forms.Platform.iOS;
-using UriImageSourceHandler = Xamarin.Forms.Platform.iOS.ImageLoaderSourceHandler;
-using StreamImageSourceHandler = Xamarin.Forms.Platform.iOS.StreamImagesourceHandler;
+using Microsoft.Maui.Platform.iOS;
+using UriImageSourceHandler = Microsoft.MauiPlatform.iOS.ImageLoaderSourceHandler;
+using StreamImageSourceHandler = Microsoft.MauiPlatform.iOS.StreamImagesourceHandler;
 #elif __MACOS__
-using Xamarin.Forms.Platform.MacOS;
-using UriImageSourceHandler = Xamarin.Forms.Platform.MacOS.ImageLoaderSourceHandler;
-using StreamImageSourceHandler = Xamarin.Forms.Platform.MacOS.StreamImagesourceHandler;
+using Microsoft.Maui.Platform.MacOS;
+using UriImageSourceHandler = Microsoft.MauiPlatform.MacOS.ImageLoaderSourceHandler;
+using StreamImageSourceHandler = Microsoft.MauiPlatform.MacOS.StreamImagesourceHandler;
 #elif UWP
-using Xamarin.Forms.Platform.UWP;
+using Microsoft.Maui.Platform.UWP;
 #elif NET471
-using Xamarin.Forms.Platform.GTK.Renderers;
-using StreamImageSourceHandler = Xamarin.Forms.Platform.GTK.Renderers.StreamImagesourceHandler;
+using Microsoft.Maui.Platform.GTK.Renderers;
+using StreamImageSourceHandler = Microsoft.MauiPlatform.GTK.Renderers.StreamImagesourceHandler;
 #elif TIZEN
-using Xamarin.Forms.Platform.Tizen;
-using NImage = Xamarin.Forms.Platform.Tizen.Native.Image;
-using XForms = Xamarin.Forms.Forms;
+using Microsoft.Maui.Platform.Tizen;
+using NImage = Microsoft.MauiPlatform.Tizen.Native.Image;
+using XForms = Microsoft.MauiForms;
 #else
-using Xamarin.Forms.Platform.WPF;
+using Microsoft.Maui.Platform.WPF;
 #endif
 
 namespace Xamarin.CommunityToolkit.UI.Views

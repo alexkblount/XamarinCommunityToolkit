@@ -3,7 +3,7 @@ using AppKit;
 using Xamarin.CommunityToolkit.Effects;
 using Xamarin.CommunityToolkit.macOS.Effects;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.MacOS;
+using Microsoft.Maui.Platform.MacOS;
 
 [assembly: ExportEffect(typeof(PlatformTouchEffect), nameof(TouchEffect))]
 

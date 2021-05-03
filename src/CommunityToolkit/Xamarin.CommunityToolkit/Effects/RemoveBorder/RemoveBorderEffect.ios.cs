@@ -1,7 +1,7 @@
 ﻿using UIKit;
 using Xamarin.CommunityToolkit.Effects;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.iOS;
+using Microsoft.Maui.Platform.iOS;
 using Effects = Xamarin.CommunityToolkit.iOS.Effects;
 
 [assembly: ExportEffect(typeof(Effects.RemoveBorderEffect), nameof(RemoveBorderEffect))]

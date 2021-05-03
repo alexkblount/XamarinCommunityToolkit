@@ -1,6 +1,6 @@
 ﻿using AppKit;
 using CoreGraphics;
-using Xamarin.Forms.Platform.MacOS;
+using Microsoft.Maui.Platform.MacOS;
 
 namespace Xamarin.CommunityToolkit.UI.Views.Helpers.macOS
 {

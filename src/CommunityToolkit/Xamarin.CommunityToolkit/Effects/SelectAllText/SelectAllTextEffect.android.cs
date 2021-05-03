@@ -1,7 +1,7 @@
 ﻿using Android.Widget;
 using Xamarin.CommunityToolkit.Effects;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui.Platform.Android;
 using Effects = Xamarin.CommunityToolkit.Android.Effects;
 
 [assembly: ExportEffect(typeof(Effects.SelectAllTextEffect), nameof(SelectAllTextEffect))]

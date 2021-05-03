@@ -1,6 +1,6 @@
 ﻿using System;
 using UIKit;
-using Xamarin.Forms.Platform.iOS;
+using Microsoft.Maui.Platform.iOS;
 
 namespace Xamarin.CommunityToolkit.UI.Views.Helpers.iOS
 {
