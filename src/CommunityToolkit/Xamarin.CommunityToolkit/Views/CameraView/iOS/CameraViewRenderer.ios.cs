@@ -5,7 +5,7 @@ using Foundation;
 using Photos;
 using UIKit;
 using Xamarin.CommunityToolkit.UI.Views;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(CameraView), typeof(CameraViewRenderer))]

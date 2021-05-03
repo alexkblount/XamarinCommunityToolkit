@@ -4,7 +4,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Xamarin.CommunityToolkit.UI.Views;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Platform.UWP;
 using Specific = Xamarin.CommunityToolkit.PlatformConfiguration.WindowsSpecific.PopUp;

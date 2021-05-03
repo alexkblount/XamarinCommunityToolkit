@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.0;netstandard2.0;netstandard2.1;Xamarin.iOS10;MonoAndroid10.0;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;tizen40</TargetFrameworks>
     <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">$(TargetFrameworks);uap10.0.19041;netcoreapp3.1;net472;net471</TargetFrameworks>
+    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'net6.0-android'">$(PackageTargetFallback);net2.0</PackageTargetFallback>
     <AssemblyName>Xamarin.CommunityToolkit</AssemblyName>
     <RootNamespace>Xamarin.CommunityToolkit</RootNamespace>
     <PackageId>Xamarin.CommunityToolkit</PackageId>
@@ -30,6 +31,7 @@
     <PackageProjectUrl>https://github.com/xamarin/XamarinCommunityToolkit</PackageProjectUrl>
     <Configurations>Debug;Release</Configurations>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <DebugType>portable</DebugType>
     <NoWarn>SA1123</NoWarn>
   </PropertyGroup>

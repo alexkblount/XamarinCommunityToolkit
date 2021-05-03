@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using Xamarin.CommunityToolkit.Extensions.Internals;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 namespace Xamarin.CommunityToolkit.Converters
 {

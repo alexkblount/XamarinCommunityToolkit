@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Internals;
 
 namespace Xamarin.CommunityToolkit.UI.Views

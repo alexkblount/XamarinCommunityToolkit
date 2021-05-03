@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Xamarin.CommunityToolkit.UI.Views.Internals;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {

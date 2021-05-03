@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Xamarin.CommunityToolkit.Behaviors.Internals;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Internals;
 
 namespace Xamarin.CommunityToolkit.Behaviors

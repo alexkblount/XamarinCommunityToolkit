@@ -6,7 +6,7 @@ using CoreGraphics;
 using CoreMedia;
 using Foundation;
 using UIKit;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {

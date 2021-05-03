@@ -1,4 +1,4 @@
-﻿using Xamarin.Forms;
+﻿using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 [assembly: ResolutionGroupName("Xamarin.CommunityToolkit.Effects")]
 

@@ -3,7 +3,7 @@ using System.Linq;
 using Windows.UI.Xaml;
 using Xamarin.CommunityToolkit.Effects;
 using Xamarin.CommunityToolkit.UWP.Effects;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Platform.UWP;
 
 [assembly: ExportEffect(typeof(LifeCycleEffectRouter), nameof(LifecycleEffect))]

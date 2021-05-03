@@ -14,7 +14,7 @@ using AView = Android.Views.View;
 
 using Xamarin.Forms.Platform.Android.FastRenderers;
 using Xamarin.Forms.Platform.Android;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.CommunityToolkit.UI.Views;
 using System.Reflection;
 using System.Threading.Tasks;

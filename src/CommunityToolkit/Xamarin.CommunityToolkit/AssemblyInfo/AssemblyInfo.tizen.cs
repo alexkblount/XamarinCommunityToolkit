@@ -1,4 +1,4 @@
 ﻿using Xamarin.CommunityToolkit.UI.Views;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 [assembly: ExportImageSourceHandler(typeof(GravatarImageSource), typeof(GravatarImageSourceHandler))]

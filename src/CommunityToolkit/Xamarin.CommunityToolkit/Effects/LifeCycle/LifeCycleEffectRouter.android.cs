@@ -2,7 +2,7 @@
 using System.Linq;
 using Xamarin.CommunityToolkit.Android.Effects;
 using Xamarin.CommunityToolkit.Effects;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Platform.Android;
 using View = Android.Views.View;
 

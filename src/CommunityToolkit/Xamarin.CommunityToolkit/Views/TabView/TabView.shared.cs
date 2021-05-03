@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using Xamarin.CommunityToolkit.Effects;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Internals;
 
 namespace Xamarin.CommunityToolkit.UI.Views

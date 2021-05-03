@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using Xamarin.CommunityToolkit.Helpers;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 namespace Xamarin.CommunityToolkit.ObjectModel.Internals
 {

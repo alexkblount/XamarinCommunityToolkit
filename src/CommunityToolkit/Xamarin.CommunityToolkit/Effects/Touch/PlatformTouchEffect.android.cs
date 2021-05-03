@@ -9,7 +9,7 @@ using Android.Views.Accessibility;
 using Android.Widget;
 using Xamarin.CommunityToolkit.Android.Effects;
 using Xamarin.CommunityToolkit.Effects;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Platform.Android;
 using AView = Android.Views.View;
 using Color = Android.Graphics.Color;

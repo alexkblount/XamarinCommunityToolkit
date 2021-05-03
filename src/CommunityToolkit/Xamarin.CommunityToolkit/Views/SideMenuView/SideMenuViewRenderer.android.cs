@@ -4,7 +4,7 @@ using Android.Runtime;
 using Android.Views;
 using Xamarin.CommunityToolkit.Android.UI.Views;
 using Xamarin.CommunityToolkit.UI.Views;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Platform.Android;
 using static System.Math;
 

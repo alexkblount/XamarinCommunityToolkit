@@ -1,4 +1,4 @@
-﻿using Xamarin.Forms;
+﻿using Microsoft.Maui; using Microsoft.Maui.Controls;
 using WStretch = Windows.UI.Xaml.Media.Stretch;
 
 namespace Xamarin.CommunityToolkit.UI.Views

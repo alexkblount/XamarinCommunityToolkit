@@ -5,7 +5,7 @@ using AVKit;
 using CoreMedia;
 using Foundation;
 using UIKit;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Platform.iOS;
 using ToolKitMediaElement = Xamarin.CommunityToolkit.UI.Views.MediaElement;

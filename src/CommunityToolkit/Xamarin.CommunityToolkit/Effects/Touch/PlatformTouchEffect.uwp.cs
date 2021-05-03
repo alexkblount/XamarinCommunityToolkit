@@ -4,7 +4,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media.Animation;
 using Xamarin.CommunityToolkit.Effects;
 using Xamarin.CommunityToolkit.UWP.Effects;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Platform.UWP;
 

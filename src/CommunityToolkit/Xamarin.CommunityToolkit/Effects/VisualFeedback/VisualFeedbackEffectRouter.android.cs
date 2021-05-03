@@ -5,7 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Xamarin.CommunityToolkit.Effects;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Platform.Android;
 using AColor = Android.Graphics.Color;
 using AView = Android.Views.View;

@@ -1,7 +1,7 @@
 ﻿using System;
 using UIKit;
 using Xamarin.CommunityToolkit.Effects;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Platform.iOS;
 using Effects = Xamarin.CommunityToolkit.iOS.Effects;
 

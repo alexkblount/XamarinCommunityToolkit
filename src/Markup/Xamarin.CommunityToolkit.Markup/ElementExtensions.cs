@@ -1,4 +1,4 @@
-﻿using Xamarin.Forms;
+﻿using Microsoft.Maui; using Microsoft.Maui.Controls;
 using Xamarin.Forms.Internals;
 using PaddingElement = Xamarin.Forms.Label; // TODO: Get rid of this after we have default interface implementation in Forms for IPaddingElement
 using FontElement = Xamarin.Forms.Label; // TODO: Get rid of this after we have default interface implementation in Forms for IFontElement

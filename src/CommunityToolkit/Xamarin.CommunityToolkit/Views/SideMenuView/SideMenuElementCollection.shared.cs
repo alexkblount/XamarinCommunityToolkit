@@ -1,5 +1,5 @@
 ﻿using System.Collections.ObjectModel;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 using static Xamarin.CommunityToolkit.UI.Views.SideMenuView;
 
 namespace Xamarin.CommunityToolkit.UI.Views

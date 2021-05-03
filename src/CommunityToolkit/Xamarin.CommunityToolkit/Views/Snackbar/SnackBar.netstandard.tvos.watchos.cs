@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.UI.Views.Options;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {

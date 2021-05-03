@@ -3,7 +3,7 @@ using System.Collections;
 using System.Globalization;
 using System.Linq;
 using Xamarin.CommunityToolkit.Extensions.Internals;
-using Xamarin.Forms;
+using Microsoft.Maui; using Microsoft.Maui.Controls;
 
 namespace Xamarin.CommunityToolkit.Converters
 {
