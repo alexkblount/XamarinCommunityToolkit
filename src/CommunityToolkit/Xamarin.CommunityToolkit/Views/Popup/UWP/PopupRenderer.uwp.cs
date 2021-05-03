@@ -5,7 +5,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Xamarin.CommunityToolkit.UI.Views;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Internals;
+using Microsoft.Maui.Controls.Internals;
 using Microsoft.Maui.Platform.UWP;
 using Specific = Xamarin.CommunityToolkit.PlatformConfiguration.WindowsSpecific.PopUp;
 using UWPThickness = Windows.UI.Xaml.Thickness;

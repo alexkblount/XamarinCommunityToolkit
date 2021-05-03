@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.UI.Views.Internals;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
 using static System.Math;
-using static Microsoft.Maui.AbsoluteLayout;
+using static Microsoft.Maui.Controls.AbsoluteLayout;
 using IList = System.Collections.IList;
 
 namespace Xamarin.CommunityToolkit.UI.Views

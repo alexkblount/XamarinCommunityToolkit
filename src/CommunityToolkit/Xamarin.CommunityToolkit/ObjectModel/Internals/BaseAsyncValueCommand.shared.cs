@@ -88,7 +88,7 @@ namespace Xamarin.CommunityToolkit.ObjectModel.Internals
 			}
 		}
 
-		bool ICommand.CanExecute(object parameter) => parameter switch
+		bool ICommand.CanExecute(object? parameter) => parameter switch
 		{
 			TCanExecute validParameter => CanExecute(validParameter),
 			null when !typeof(TCanExecute).GetTypeInfo().IsValueType => CanExecute((TCanExecute?)parameter),
@@ -96,7 +96,7 @@ namespace Xamarin.CommunityToolkit.ObjectModel.Internals
 			_ => throw new InvalidCommandParameterException(typeof(TCanExecute), parameter.GetType()),
 		};
 
-		void ICommand.Execute(object parameter)
+		void ICommand.Execute(object? parameter)
 		{
 			switch (parameter)
 			{

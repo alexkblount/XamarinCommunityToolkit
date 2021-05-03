@@ -6,7 +6,7 @@ using CoreMedia;
 using Foundation;
 using UIKit;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Internals;
+using Microsoft.Maui.Controls.Internals;
 using Microsoft.Maui.Platform.iOS;
 using ToolKitMediaElement = Xamarin.CommunityToolkit.UI.Views.MediaElement;
 using ToolKitMediaElementRenderer = Xamarin.CommunityToolkit.UI.Views.MediaElementRenderer;

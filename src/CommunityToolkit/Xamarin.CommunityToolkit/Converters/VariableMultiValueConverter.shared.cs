@@ -4,7 +4,7 @@ using System.Linq;
 using Xamarin.CommunityToolkit.Extensions.Internals;
 using Xamarin.CommunityToolkit.Helpers;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Internals;
+using Microsoft.Maui.Controls.Internals;
 
 namespace Xamarin.CommunityToolkit.Converters
 {

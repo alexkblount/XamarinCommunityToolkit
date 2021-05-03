@@ -30,7 +30,7 @@ using Env = Android.OS.Environment;
 using Java.Lang;
 using Java.Util.Concurrent;
 
-using Microsoft.Maui.Internals;
+using Microsoft.Maui.Controls.Internals;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.Maui; using Microsoft.Maui.Controls;

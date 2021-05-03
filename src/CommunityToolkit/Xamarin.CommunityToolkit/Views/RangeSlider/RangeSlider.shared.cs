@@ -4,9 +4,9 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using Xamarin.CommunityToolkit.UI.Views.Internals;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Internals;
+using Microsoft.Maui.Controls.Internals;
 using static System.Math;
-using static Microsoft.Maui.AbsoluteLayout;
+using static Microsoft.Maui.Controls.AbsoluteLayout;
 
 namespace Xamarin.CommunityToolkit.UI.Views
 {

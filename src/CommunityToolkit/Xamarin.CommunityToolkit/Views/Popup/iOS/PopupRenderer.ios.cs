@@ -6,7 +6,7 @@ using Xamarin.CommunityToolkit.Helpers;
 using Xamarin.CommunityToolkit.PlatformConfiguration.iOSSpecific;
 using Xamarin.CommunityToolkit.UI.Views;
 using Microsoft.Maui; using Microsoft.Maui.Controls;
-using Microsoft.Maui.Internals;
+using Microsoft.Maui.Controls.Internals;
 using Microsoft.Maui.Platform.iOS;
 using Specifics = Xamarin.CommunityToolkit.PlatformConfiguration.iOSSpecific.PopUp;
 
