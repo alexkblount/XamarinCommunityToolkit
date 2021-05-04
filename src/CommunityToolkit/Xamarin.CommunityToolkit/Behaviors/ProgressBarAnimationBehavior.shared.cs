@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.Behaviors.Internals;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 
 namespace Xamarin.CommunityToolkit.Behaviors
 {

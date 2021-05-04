@@ -1,4 +1,5 @@
-﻿using Microsoft.Maui; using Microsoft.Maui.Controls;
+﻿using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Internals;
 using Microsoft.Maui.Controls.Compatibility.Android;
 
@@ -31,6 +32,8 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			};
 
 			badgeBorder.SetBinding(BackgroundColorProperty, new Binding("BackgroundColor", source: RelativeBindingSource.TemplatedParent));
+
+			// TODO: Fix this. VisualElement.Frame is Rectangle instead of Frame in Maui
 			// badgeBorder.SetBinding(Frame.BorderColorProperty, new Binding("BorderColor", source: RelativeBindingSource.TemplatedParent));
 
 			badgeText.BatchBegin();

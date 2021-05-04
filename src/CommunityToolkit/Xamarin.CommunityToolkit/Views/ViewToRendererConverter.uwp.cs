@@ -2,7 +2,8 @@
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Xamarin.CommunityToolkit.Extensions;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Platform.UWP;
 using WRect = Windows.Foundation.Rect;
 

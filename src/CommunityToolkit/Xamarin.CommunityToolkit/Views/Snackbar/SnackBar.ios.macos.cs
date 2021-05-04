@@ -2,7 +2,8 @@
 using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.UI.Views.Options;
 using Xamarin.CommunityToolkit.Views.Snackbar.Helpers;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 #if __IOS__
 using UIKit;
 using Microsoft.Maui.Platform.iOS;

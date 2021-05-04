@@ -1,7 +1,8 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.UI.Views;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Platform.UWP;
 
 namespace Xamarin.CommunityToolkit.Extensions

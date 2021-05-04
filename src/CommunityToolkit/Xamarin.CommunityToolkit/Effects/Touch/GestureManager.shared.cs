@@ -5,7 +5,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.CommunityToolkit.Helpers;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using static System.Math;
 
 namespace Xamarin.CommunityToolkit.Effects

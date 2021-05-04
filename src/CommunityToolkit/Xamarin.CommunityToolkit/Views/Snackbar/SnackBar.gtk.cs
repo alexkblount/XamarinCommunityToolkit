@@ -4,7 +4,8 @@ using System.Timers;
 using Gtk;
 using Pango;
 using Xamarin.CommunityToolkit.UI.Views.Options;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Platform.GTK;
 using Microsoft.Maui.Platform.GTK.Extensions;
 

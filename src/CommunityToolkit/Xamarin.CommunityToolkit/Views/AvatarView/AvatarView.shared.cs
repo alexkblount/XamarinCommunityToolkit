@@ -3,7 +3,8 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.UI.Views.Internals;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using static System.Math;
 
 namespace Xamarin.CommunityToolkit.UI.Views

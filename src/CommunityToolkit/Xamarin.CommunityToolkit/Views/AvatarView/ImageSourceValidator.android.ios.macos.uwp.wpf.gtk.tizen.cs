@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 
 #if NET6_0_ANDROID
 using Microsoft.Maui.Controls.Compatibility.Platform.Android;

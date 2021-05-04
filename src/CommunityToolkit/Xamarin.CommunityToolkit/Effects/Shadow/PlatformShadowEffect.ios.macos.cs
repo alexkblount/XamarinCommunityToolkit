@@ -2,7 +2,8 @@
 using System.ComponentModel;
 using CoreGraphics;
 using Xamarin.CommunityToolkit.Effects;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 
 #if __IOS__
 using NativeView = UIKit.UIView;

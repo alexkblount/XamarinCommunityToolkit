@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Globalization;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 #if NETSTANDARD1_0 || UAP10_0
 using System.Reflection;
 #endif

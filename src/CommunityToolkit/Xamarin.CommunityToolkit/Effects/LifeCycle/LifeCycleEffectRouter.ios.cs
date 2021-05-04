@@ -2,7 +2,8 @@
 using System.Linq;
 using Xamarin.CommunityToolkit.Effects;
 using Xamarin.CommunityToolkit.iOS.Effects;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Platform.iOS;
 
 [assembly: ExportEffect(typeof(LifeCycleEffectRouter), nameof(LifecycleEffect))]

@@ -2,7 +2,8 @@
 using Android.Graphics.Drawables;
 using Android.Graphics.Drawables.Shapes;
 using Xamarin.CommunityToolkit.Effects;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 using Effects = Xamarin.CommunityToolkit.Android.Effects;
 

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.UI.Views.Internals;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using PropertyChangedEventArgs = System.ComponentModel.PropertyChangedEventArgs;
 
 namespace Xamarin.CommunityToolkit.UI.Views

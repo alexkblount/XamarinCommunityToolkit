@@ -4,7 +4,8 @@ using System.Globalization;
 using System.Threading.Tasks;
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.CommunityToolkit.UI.Views.Options;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 
 namespace Xamarin.CommunityToolkit.Extensions
 {

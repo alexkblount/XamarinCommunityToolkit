@@ -2,7 +2,8 @@
 using ObjCRuntime;
 using UIKit;
 using Xamarin.CommunityToolkit.Effects;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Platform.iOS;
 using Effects = Xamarin.CommunityToolkit.iOS.Effects;
 

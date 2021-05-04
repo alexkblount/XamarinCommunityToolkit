@@ -1,5 +1,6 @@
 ﻿using Android.Views;
-using Microsoft.Maui; using Microsoft.Maui.Controls;
+using Microsoft.Maui; 
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Compatibility.Platform.Android;
 
 namespace Xamarin.CommunityToolkit.UI.Views
