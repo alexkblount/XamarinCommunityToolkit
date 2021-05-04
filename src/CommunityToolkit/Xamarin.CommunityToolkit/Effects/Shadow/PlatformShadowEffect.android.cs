@@ -78,7 +78,7 @@ namespace Xamarin.CommunityToolkit.Android.Effects
 				? ViewOutlineProvider.PaddedBounds
 				: ViewOutlineProvider.Bounds;
 
-			// View.Elevation = View.Context.ToPixels(radius);
+			View.Elevation = Microsoft.Maui.Controls.Compatibility.Platform.Android.ContextExtensions.ToPixels(View.Context, radius);
 
 			if (Build.VERSION.SdkInt < BuildVersionCodes.P)
 				return;

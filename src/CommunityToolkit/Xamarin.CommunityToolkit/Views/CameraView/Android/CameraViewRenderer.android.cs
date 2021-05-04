@@ -220,8 +220,8 @@ namespace Xamarin.CommunityToolkit.UI.Views
 			if (width <= 0 || height <= 0)
 				return;
 
-			var realWidth = 0;//(int)context.ToPixels(width);
-			var realHeight = 0;//(int)context.ToPixels(height);
+			var realWidth = (int)Microsoft.Maui.Controls.Compatibility.Platform.Android.ContextExtensions.ToPixels(context, width);
+			var realHeight = (int)Microsoft.Maui.Controls.Compatibility.Platform.Android.ContextExtensions.ToPixels(context, height);
 
 			var widthMeasureSpec = MeasureSpecFactory.MakeMeasureSpec(realWidth, MeasureSpecMode.Exactly);
 			var heightMeasureSpec = MeasureSpecFactory.MakeMeasureSpec(realHeight, MeasureSpecMode.Exactly);
@@ -241,7 +241,8 @@ namespace Xamarin.CommunityToolkit.UI.Views
 		SizeRequest IVisualElementRenderer.GetDesiredSize(int widthConstraint, int heightConstraint)
 		{
 			Measure(widthConstraint, heightConstraint);
-			var result = new SizeRequest(new Size(MeasuredWidth, MeasuredHeight), new Size(0,0));//(Context.ToPixels(20), Context.ToPixels(20)));
+			var result = new SizeRequest(new Size(MeasuredWidth, MeasuredHeight), 
+			new Size(Microsoft.Maui.Controls.Compatibility.Platform.Android.ContextExtensions.ToPixels(Context, 20), Microsoft.Maui.Controls.Compatibility.Platform.Android.ContextExtensions.ToPixels(Context, 20)));
 			return result;
 		}
 
